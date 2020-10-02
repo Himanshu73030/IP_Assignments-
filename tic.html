@@ -11,27 +11,29 @@
 </head>
 <body onload="startGame()">
     <h1>Welcome to my Tic-Tac-Toe Game</h1>
+	<div class="centre">
     <div id="message">hi</div>
     <table>
         
         <tr>
-            <th id="s1" class="Square" onclick="nextMove(this);"></th>
-            <th id="s2" class="Square" onclick="nextMove(this);"></th>
-            <th id="s3" class="Square" onclick="nextMove(this);"></th>
+            <th id="s1" class="Square" onclick="nextMove(this);" style="border-right:3px solid black;border-bottom:3px solid black;"></th>
+            <th id="s2" class="Square" onclick="nextMove(this);" style="border-right:3px solid black;border-bottom:3px solid black;"></th>
+            <th id="s3" class="Square" onclick="nextMove(this);" style="border-bottom:3px solid black;"></th>
         </tr>
         <tr>
-            <th id="s4" class="Square" onclick="nextMove(this);"></th>
-            <th id="s5" class="Square" onclick="nextMove(this);"></th>
-            <th id="s6" class="Square" onclick="nextMove(this);"></th>
+            <th id="s4" class="Square" onclick="nextMove(this);" style="border-right:3px solid black;border-bottom:3px solid black;"></th>
+            <th id="s5" class="Square" onclick="nextMove(this);" style="border-right:3px solid black;border-bottom:3px solid black;"></th>
+            <th id="s6" class="Square" onclick="nextMove(this);" style="border-bottom:3px solid black;"></th>
         </tr>
         <tr>
-            <th id="s7" class="Square" onclick="nextMove(this);"></th>
-            <th id="s8" class="Square" onclick="nextMove(this);"></th>
+            <th id="s7" class="Square" onclick="nextMove(this);" style="border-right:3px solid black;"></th>
+            <th id="s8" class="Square" onclick="nextMove(this);" style="border-right:3px solid black;"></th>
             <th id="s9" class="Square" onclick="nextMove(this);"></th>
         </tr>
         
         
     </table>
-    <button><a href="javascript:startGame();">Start Over</a></button>
+    <a href="javascript:startGame();"><button>Start Over</button></a>
+	</div>
 </body>
 </html>
